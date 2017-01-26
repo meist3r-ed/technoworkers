@@ -1,32 +1,48 @@
+.page{
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 #bg{
     position: relative;
     z-index: 1;
-    top: 0;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     background-image: url("../img/home/bg.png");
     background-size: cover;
     background-repeat: no-repeat;
+    transform: translateZ(-1px) scale(2);
 }
 
 #cubes{
     position: relative;
     z-index: 2;
     top: 0;
+    left: 0;
     height: 100vh;
     width: 100vw;
+    margin-top: -100vh;
     background: url("../img/cubes.png");
     background-size: 67px 100px;
     background-repeat: repeat;
     opacity: 0.75;
+    transform: translateZ(-0.6px) scale(1.6);
+}
+
+#logo_holder{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    margin-top: 18vh;
+    width: 100vw;
+    transform: translateZ(0px) scale(1);
 }
 
 #logo{
-    position: relative;
-    z-index: 3;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -80vh;
     height: 50vh;
     width: 75vh;
     background: url("../img/home/logo.png");
@@ -35,15 +51,31 @@
 }
 
 #button{
-    position: relative;
+    position: absolute;
     z-index: 3;
-    margin-left: 43.5%;
-    font-family: HK Grotesk;
-    font-weight: bold;
-    font-style: normal;
+    margin-top: -27vh;
+    width: 100%;
+    text-align: center;
+    transform: translateZ(0px) scale(1);
+}
+
+#button_text{
     font-size: 4vh;
-    margin-top: 15vh;
     padding: 2px 6px 2px 6px;
     border-style: solid;
     border-color: #000000;
+    transition: background-color 0.5s;
+}
+
+#button_text:hover{
+    background-color: #fafafa;
+}
+
+#footer{
+    z-index: 3;
+    left: 0;
+    height: 10vh;
+    width: 100%;
+    background-color: #212121;
+    transform: translateZ(0px) scale(1);
 }
