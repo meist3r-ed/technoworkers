@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Techno Workers</title>
+        <meta charset="utf-8" lang="pt"></meta>
+        <link type="text/css" rel="stylesheet" href="css/normalize.css"/>
+        <link type="text/css" rel="stylesheet" href="css/main.css"/>
+        <link type="text/css" rel="stylesheet" href="css/menudiv.css"/>
+        <link type="text/css" rel="stylesheet" href="css/about.css"/>
+        <script type="text/javascript" src="script/prefixfree.min.js"></script>
+        <script type="text/javascript" src="script/selector.js"></script>
+        <script type="text/javascript" src="script/switcher.js"></script>
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <header id="header">
+            <!-- HEADER CONTAINER -->
+            <nav id="menuNav">
+                <!-- MENU ICON -->
+                <div id="menuIcon">
+                    <img id="menuIcon_img" src="img/topdiv/top_icon.png" height="30px" onclick="switcher(0)"/>
+                </div>
+                <!-- MENU TEXT -->
+                <table id="menuNav_content">
+                    <tr>
+                        <td class="menuText" id="about_text" onclick="switcher(1)"
+                            onmouseover="selector(1,1)" onmouseout="selector(1,2)">
+                            SOBRE
+                        </td>
+                        <td class="menuText" id="services_text" onclick="switcher(2)"
+                            onmouseover="selector(2,1)" onmouseout="selector(2,2)">
+                            SERVIÇOS
+                        </td>
+                        <td class="menuText" id="clients_text" onclick="switcher(3)"
+                            onmouseover="selector(3,1)" onmouseout="selector(3,2)">
+                            CLIENTES
+                        </td>
+                        <td class="menuText" id="liaison_text" onclick="switcher(4)"
+                            onmouseover="selector(4,1)" onmouseout="selector(4,2)">
+                            CONTATO
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="menuText_interact" id="about_interact"></div>
+                        </td>
+                        <td>
+                            <div class="menuText_interact" id="services_interact"></div>
+                        </td>
+                        <td>
+                            <div class="menuText_interact" id="clients_interact"></div>
+                        </td>
+                        <td>
+                            <div class="menuText_interact" id="liaison_interact"></div>
+                        </td>
+                    </tr>
+                </table>
+            </nav>
+            <!-- HEADER BACKGROUND -->
+            <div id="header_bg"></div>
+        </header>
+
+        <!-- PAGE CONTENT -->
+        <div class="page" id="layout">
+            <div class="background" id="bg"></div>
+            <div class="background" id="cubes"></div>
+            <div class="overlay_shape" id="top"></div>
+            <div class="overlay_shape" id="bottom"></div>
+
+            <div class="overlay_text" id="layout_text">
+                <div id="title">
+                    <span class="text_light">Prazer, </span>
+                    <span class="text_bold">Techno Workers</span>
+                </div>
+
+                <div id="subtitle">
+                    <span class="text_light">Soluções em TI com </span>
+                    <span class="text_bold">excelência</span>
+                    <div id="underscore"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+<html>

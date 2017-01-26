@@ -1,0 +1,78 @@
+.page{
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#bg{
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../img/about/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateZ(-1px) scale(2);
+}
+
+#cubes{
+    position: relative;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    margin-top: -100vh;
+    background: url("../img/cubes_dark.png");
+    background-size: 67px 100px;
+    background-repeat: repeat;
+    opacity: 0.3;
+    transform: translateZ(-0.6px) scale(1.6);
+}
+
+.overlay_shape, .overlay_text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    transform: translateZ(-0px) scale(1);
+}
+
+#top{
+    height: 32vh;
+    background: url("../img/about/overlay_top.png");
+    background-position: top;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#bottom{
+    height: 70vh;
+    margin-top: 70vh;
+    background: url("../img/about/overlay_bottom.png");
+    background-position: bottom;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#title{
+    margin-top: 16vh;
+    font-size: 9vh;
+    text-align: center;
+}
+
+#subtitle{
+    margin-top: 48vh;
+    font-size: 8vh;
+    text-align: center;
+}
+
+#underscore{
+    height: 1vh;
+    width: 35vw;
+    margin-top: 1.45vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d32f2f;
+}
