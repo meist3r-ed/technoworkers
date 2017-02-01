@@ -70,12 +70,3 @@
 #button_text:hover{
     background-color: #fafafa;
 }
-
-#footer{
-    z-index: 3;
-    left: 0;
-    height: 10vh;
-    width: 100%;
-    background-color: #212121;
-    transform: translateZ(0px) scale(1);
-}

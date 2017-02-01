@@ -63,6 +63,10 @@
     text-align: center;
 }
 
+.title_low{
+    font-size: 7vh;
+}
+
 #subtitle{
     z-index: 3;
     margin-top: 48vh;
@@ -118,11 +122,5 @@
 }
 
 #footer{
-    z-index: 3;
-    left: 0;
     margin-top: 35vh;
-    height: 10vh;
-    width: 100%;
-    background-color: #212121;
-    transform: translateZ(0px) scale(1);
 }
