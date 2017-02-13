@@ -60,7 +60,7 @@
 }
 
 #bottom{
-    height: 50vh;
+    height: 55vh;
     width: 60.8%;
     margin-left: 0;
     margin-right: auto;
@@ -103,7 +103,7 @@
 
 #bracket{
     margin-top: -3vh;
-    margin-left: 4%;
+    margin-left: 3%;
     height: 3vh;
     width: 4vh;
     background: url("../img/services/bracket.jpg");
@@ -115,41 +115,21 @@
 #content_table{
     z-index: 3;
     margin-top: 6vh;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    margin-left: 3%;
+    text-align: justify;
     height: auto;
-    width: 90vw;
+    width: 54%;
 }
 
-.content_icon{
-    height: 11vh;
-    width: 11vh;
-    margin-left: auto;
-    margin-right: auto;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+#content_text_title{
+    font-size: 5vh;
 }
 
-#icon_1{
-    background-image: url("../img/about/icon_1.png");
-}
-
-#icon_2{
-    background-image: url("../img/about/icon_2.png");
-}
-
-#icon_3{
-    background-image: url("../img/about/icon_3.png");
+#content_text_title_2{
+    font-size: 5vh;
 }
 
 .content_text{
-    font-size: 3.5vh;
-    padding-top: 2vh;
-    padding-left: 5vh;
-    padding-right: 5vh;
-}
-
-#footer{
-    margin-top: 35vh;
+    font-size: 3.3vh;
+    padding-top: 3vh;
 }
