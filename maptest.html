@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Techno Workers</title>
+        <meta charset="utf-8" lang="pt"></meta>
+        <link type="text/css" rel="stylesheet" href="css/normalize.css"/>
+        <link type="text/css" rel="stylesheet" href="css/main.css"/>
+        <link type="text/css" rel="stylesheet" href="css/menudiv.css"/>
+        <link type="text/css" rel="stylesheet" href="css/footerdiv.css"/>
+        <link type="text/css" rel="stylesheet" href="css/home.css"/>
+        <link type="text/css" rel="stylesheet" href="css/liaison.css"/>
+        <script type="text/javascript" src="script/prefixfree.min.js"></script>
+        <script type="text/javascript" src="script/selector.js"></script>
+        <script type="text/javascript" src="script/switcher.js"></script>
+        <!-- <script type="text/javascript">
+            /* screen.width defines system width*/
+            /* clientWidth defines browser width */
+            if (screen.width <= 800 || document.documentElement.clientWidth <= 800) {
+                window.location = "m.index.html";
+            }
+        </script> -->
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <header id="header">
+            <!-- HEADER CONTAINER -->
+            <nav id="menuNav">
+                <!-- MENU ICON -->
+                <div id="menuIcon">
+                    <img id="menuIcon_img" src="img/topdiv/top_icon.png" height="30px" onclick="switcher(0)"/>
+                </div>
+                <!-- MENU TEXT -->
+                <table id="menuNav_content">
+                    <tr>
+                        <td class="menuText" id="about_text" onclick="switcher(1)"
+                            onmouseover="selector(1,1)" onmouseout="selector(1,2)">
+                            SOBRE
+                        </td>
+                        <td class="menuText" id="services_text" onclick="switcher(2)"
+                            onmouseover="selector(2,1)" onmouseout="selector(2,2)">
+                            SERVIÇOS
+                        </td>
+                        <td class="menuText" id="clients_text" onclick="switcher(3)"
+                            onmouseover="selector(3,1)" onmouseout="selector(3,2)">
+                            CLIENTES
+                        </td>
+                        <td class="menuText" id="liaison_text" onclick="switcher(4)"
+                            onmouseover="selector(4,1)" onmouseout="selector(4,2)">
+                            CONTATO
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="menuText_interact" id="about_interact"></div>
+                        </td>
+                        <td>
+                            <div class="menuText_interact" id="services_interact"></div>
+                        </td>
+                        <td>
+                            <div class="menuText_interact" id="clients_interact"></div>
+                        </td>
+                        <td>
+                            <div class="menuText_interact" id="liaison_interact"></div>
+                        </td>
+                    </tr>
+                </table>
+            </nav>
+            <!-- HEADER BACKGROUND -->
+            <div id="header_bg"></div>
+        </header>
+
+        <!-- PAGE CONTENT -->
+        <div class="page" id="layout">
+            <div id="bg"></div>
+            <div id="cubes"></div>
+
+            <iframe id="maps_embedded" frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJeXeu6Ffax5QRESiPU42RgYI&key=AIzaSyA2RR2IfCu2glNvT41JtvpxpfVqED1K0as" allowfullscreen>
+            </iframe>
+
+            <!-- FOOTER -->
+            <div id="footer">
+                <div id="left_foot">
+                    <table id="business">
+                        <tr>
+                            <td class="business_holder"> <div id="logo_footer"></div> </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="right_foot">
+                    <table id="logos">
+                        <tr>
+                            <td class="logo_holder"> <div class="logo" id="logo_facebook"></div> </td>
+                            <td class="logo_holder"> <div class="logo" id="logo_linkedin"></div> </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+<html>

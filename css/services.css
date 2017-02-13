@@ -8,10 +8,12 @@
 #bg{
     position: relative;
     z-index: 1;
+    margin-left: auto;
+    margin-right: -50%;
     height: 100vh;
-    width: 100vw;
-    background-image: url("../img/about/bg.jpg");
-    background-size: cover;
+    width: 60vw;
+    background-image: url("../img/services/bg.jpg");
+    background-size: 60vw 100vh;
     background-repeat: no-repeat;
     transform: translateZ(-1px) scale(2);
 }
@@ -42,19 +44,28 @@
 
 #top{
     height: 32vh;
-    background: url("../img/about/overlay_top.png");
+    background: url("../img/services/overlay_top.png");
     background-position: top;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
-#bottom{
-    height: 70vh;
-    margin-top: 70vh;
-    background: url("../img/about/overlay_bottom.png");
-    background-position: bottom;
-    background-size: 100% 100%;
+#mid{
+    height: 15vh;
+    margin-top: calc(32vh - 0.1%);
+    background: url("../img/services/overlay_mid.png");
+    background-position: left;
+    background-size: 70% 100%;
     background-repeat: no-repeat;
+}
+
+#bottom{
+    height: 50vh;
+    width: 60.8%;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: calc(32vh + 15vh - 0.1%);
+    background-color: #fafafa;
 }
 
 #title{
@@ -63,24 +74,42 @@
     text-align: center;
 }
 
-.title_low{
-    font-size: 7vh;
-}
-
 #subtitle{
     z-index: 3;
-    margin-top: 48vh;
-    font-size: 8vh;
-    text-align: center;
+    margin-top: 6vh;
+    margin-left: 1.5%;
+    font-size: 5vh;
+    text-align: left;
+}
+
+#services_table{
+    width: 58%;
+}
+
+.services_button{
+    transition: background-color 0.5s;
+}
+
+.services_button:hover{
+    background-color: #d9d9d9;
 }
 
 #underscore{
     height: 1vh;
-    width: 35vw;
-    margin-top: 1.45vh;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #d32f2f;
+    width: 58%;
+    margin-top: 2vh;
+    background-color: #1976d2;
+}
+
+#bracket{
+    margin-top: -3vh;
+    margin-left: 4%;
+    height: 3vh;
+    width: 4vh;
+    background: url("../img/services/bracket.jpg");
+    background-size: 4vh 3vh;
+    background-repeat: no-repeat;
+    transition: margin-left 0.5s;
 }
 
 #content_table{

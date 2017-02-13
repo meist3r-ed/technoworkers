@@ -36,6 +36,7 @@
     z-index: 3;
     top: 0;
     margin-top: 18vh;
+    height: 50vh;
     width: 100vw;
     transform: translateZ(0px) scale(1);
 }
