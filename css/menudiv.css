@@ -17,17 +17,36 @@ header{
 #menuIcon{
     position: absolute;
     left: 3%;
+    height: 50px;
+    width: 50px;
+    display: none;
+    transition: background-color 0.5s;
+}
+
+#menuIcon:hover{
+    background-color: #525252;
 }
 
 #menuIcon_img{
+    width: 50px;
+    height: 50px;
+}
+
+#logoIcon{
+    position: absolute;
+    left: 3%;
+    width: 63px;
+}
+
+#logoIcon_img{
     width: 59px;
     height: 53px;
-    margin-left: 0px;
-    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
     transition: margin 0.5s;
 }
 
-#menuIcon_img:hover{
+#logoIcon_img:hover{
     margin-left: -3px;
     margin-top: -3px;
     width: 63px;
@@ -79,10 +98,64 @@ header{
     opacity: 0.8;
 }
 
+#side_menu_container{
+    height: 100vh;
+    width: 340px;
+    display: none;
+}
+
+#side_menu{
+    position: relative;
+    z-index: 100;
+}
+
+#side_menu_list{
+    z-index: 100;
+    list-style-type: none;
+    width: 150px;
+}
+
+.side_menu_text{
+    font-family: HK Grotesk;
+    font-weight: 500;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 25px;
+    width: 250px;
+    margin-top: 30px;
+    transition: background-color 0.5s;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.side_menu_text:hover{
+    background: #525252;
+}
+
+#side_menu_bg{
+    z-index: 99;
+    margin-top: -251px;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    opacity: 0.8;
+}
+
 /* max-device-width */
 @media only screen and (max-width: 875px){
     #header_bg{
         margin-top: -20px;
+    }
+    #menuIcon{
+        display: block;
+    }
+    #logoIcon{
+        left: calc(50% - 29.5px);
     }
     #menuNav_content{
         display: none;

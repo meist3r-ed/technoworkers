@@ -12,6 +12,7 @@
         <script type="text/javascript" src="script/selector.js"></script>
         <script type="text/javascript" src="script/switcher.js"></script>
         <script type="text/javascript" src="script/services.js"></script>
+        <script type="text/javascript" src="script/sidemenu.js"></script>
     </head>
 
     <body>
@@ -21,7 +22,11 @@
             <nav id="menuNav">
                 <!-- MENU ICON -->
                 <div id="menuIcon">
-                    <img id="menuIcon_img" src="img/topdiv/top_icon.png" height="30px" onclick="switcher(0)"/>
+                    <img id="menuIcon_img" src="img/topdiv/menu_icon.png" height="30px" onclick="openSideMenu()"/>
+                </div>
+                <!-- LOGO ICON -->
+                <div id="logoIcon">
+                    <img id="logoIcon_img" src="img/topdiv/top_icon.png" height="30px" onclick="switcher(0)"/>
                 </div>
                 <!-- MENU TEXT -->
                 <table id="menuNav_content">
@@ -61,6 +66,20 @@
             </nav>
             <!-- HEADER BACKGROUND -->
             <div id="header_bg"></div>
+
+            <!-- SIDE MENU -->
+            <div id="side_menu_container">
+                <nav id="side_menu">
+                    <ul id="side_menu_list">
+                        <li class="side_menu_text" onclick="switcher(1)">SOBRE</li>
+                        <li class="side_menu_text" onclick="switcher(2)">SERVIÇOS</li>
+                        <li class="side_menu_text" onclick="switcher(3)">CLIENTES</li>
+                        <li class="side_menu_text" onclick="switcher(4)">CONTATO</li>
+                    </ul>
+                </nav>
+                <!-- SIDE MENU BG -->
+                <div id="side_menu_bg"></div>
+            </div>
         </header>
 
         <!-- PAGE CONTENT -->
