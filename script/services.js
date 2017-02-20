@@ -15,7 +15,17 @@ function services_button_2_text(){
     + "do ambiente de TI do nível básico ao avançado. "
     + "<hr></hr> "
     + "O foco deste serviço ao usuário final que precisados recursos de "
-    + "TI como ferramental para executar suas tarefas cotidianas."
+    + "TI como ferramental para executar suas tarefas cotidianas. "
+    return text;
+}
+
+function services_button_3_text(){
+    var text = "Gerenciamento da infraestrutura de comunicação "
+    + "e sustentação de sistemas de informação, como servidores, "
+    + "Intranet, Internet e canais de comunicação. "
+    + "<hr></hr> "
+    + "Garantia da disponibilidade e capacidade do ambiente através "
+    + "de monitoramento proativo e proposta de solução de gargalos."
     return text;
 }
 
@@ -33,13 +43,29 @@ function services_clear_buttons(){
     button.innerHTML = "Projetos";
 }
 
+function services_clear_table(){
+    var title = document.getElementById("content_text_title");
+    title.innerHTML = "";
+
+    var body = document.getElementById("content_text_body");
+    body.innerHTML = "";
+
+    var title_2 = document.getElementById("content_text_title_2");
+    title_2.innerHTML = "";
+
+    var body_2 = document.getElementById("content_text_body_2");
+    body_2.innerHTML = "";
+}
+
 function services_select(num){
     var curbut = "button_" + num.toString();
     var bracket = document.getElementById("bracket");
     var button = document.getElementById(curbut);
     var title = document.getElementById("content_text_title");
     var body = document.getElementById("content_text_body");
+
     services_clear_buttons();
+    services_clear_table();
 
     switch(num){
         case 1:
@@ -57,6 +83,8 @@ function services_select(num){
         case 3:
             bracket.style.marginLeft = "29.5%";
             button.innerHTML = "<span class=\"text_bold\">Gerenciamento</span>";
+            title.innerHTML = "Serviços de Campo e Gerenciamento";
+            body.innerHTML = services_button_3_text();
             break;
         case 4:
             bracket.style.marginLeft = "49%";

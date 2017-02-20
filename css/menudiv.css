@@ -161,3 +161,10 @@ header{
         display: none;
     }
 }
+
+/* Auto disables side-menu at screen enlargement */
+@media screen and (min-width: 876px){
+    #side_menu_container{
+        display: none;
+    }
+}
