@@ -36,19 +36,42 @@
     z-index: 3;
     top: 0;
     margin-top: 18vh;
-    height: 50vh;
-    width: 100vw;
+    height: calc(50vh + 30px);
+    width: 100%;
     transform: translateZ(0px) scale(1);
 }
 
+@keyframes logo_anim{
+    from{
+        margin-top: 30px;
+        opacity: 0.0;
+    }
+    to{
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
 #logo{
+    width: 75vh;
+    height: 50vh;
     margin-left: auto;
     margin-right: auto;
-    height: 50vh;
-    width: 75vh;
     background: url("../img/home/logo.png");
-    background-size: contain;
+    background-size: 75vh 50vh;
     background-repeat: no-repeat;
+    transition: opacity 0.5s;
+    transition: margin-top 0.5s;
+    animation: logo_anim 1s ease;
+}
+
+@keyframes button_anim{
+    from{
+        opacity: 0.0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 #button{
@@ -58,6 +81,7 @@
     width: 100%;
     text-align: center;
     transform: translateZ(0px) scale(1);
+    animation: button_anim 1s ease;
 }
 
 #button_text{
@@ -70,4 +94,29 @@
 
 #button_text:hover{
     background-color: #fafafa;
+}
+
+/* ---------------------------------------------------- */
+/* MOBILE LAYOUT */
+@media only screen and (max-width: 875px){
+    #logo_holder{
+        margin-top: 25vh;
+    }
+    #logo{
+        height: 46vh;
+        width: 67vh;
+        margin-left: auto;
+        margin-right: auto;
+        background-size: 67vh 46vh;
+    }
+    #button{
+        margin-top: -15vh;
+    }
+    #button_text{
+        font-size: 5vh;
+        padding: 2px 6px 2px 6px;
+        border-style: solid;
+        border-color: #000000;
+        transition: background-color 0.5s;
+    }
 }

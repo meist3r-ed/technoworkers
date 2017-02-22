@@ -146,6 +146,8 @@ header{
     opacity: 0.8;
 }
 
+/* ---------------------------------------------------- */
+/* MOBILE LAYOUT */
 /* max-device-width */
 @media only screen and (max-width: 875px){
     #header_bg{

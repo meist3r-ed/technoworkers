@@ -36,7 +36,7 @@
     z-index: 3;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     transform: translateZ(-0px) scale(1);
 }
 
@@ -121,6 +121,102 @@
     padding-right: 5vh;
 }
 
+#content_table_mobile{
+    display: none;
+    z-index: 3;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: auto;
+    width: 90vw;
+}
+
 footer{
-    margin-top: 35vh;
+    margin-top: 40vh;
+}
+
+/* ---------------------------------------------------- */
+/* MOBILE LAYOUT */
+@media only screen and (max-width: 875px){
+    @media only screen and (min-width: 577px){
+        #top{
+            height: 28vh;
+            background-color: #fafafa;
+        }
+    }
+    @media only screen and (max-width: 576px){
+        #top{
+            height: 38vh;
+            background-color: #fafafa;
+        }
+    }
+
+    @media only screen and (min-width: 577px){
+        #bottom{
+            height: 100vh;
+            margin-top: 67vh;
+            background-color: #fafafa;
+        }
+    }
+    @media only screen and (max-width: 576px){
+        #bottom{
+            height: 120vh;
+            margin-top: 75vh;
+            background-color: #fafafa;
+        }
+    }
+
+    #title{
+        margin-top: 16vh;
+        font-size: 7.5vh;
+        text-align: center;
+    }
+
+    .title_low{
+        font-size: 5.5vh;
+    }
+
+    @media only screen and (min-width: 577px){
+        #subtitle{
+            margin-top: 45.5vh;
+            font-size: 6.5vh;
+            text-align: center;
+        }
+    }
+    @media only screen and (max-width: 576px){
+        #subtitle{
+            margin-top: 43.5vh;
+            font-size: 6.5vh;
+            text-align: center;
+        }
+    }
+    .content_icon{
+        margin-top: 6vh;
+        height: 13vh;
+        width: 13vh;
+    }
+
+    .content_text{
+        font-size: 4vh;
+        padding-top: 2vh;
+    }
+
+    #content_table{
+        display: none;
+    }
+
+    #content_table_mobile{
+        display: block;
+    }
+
+    @media only screen and (min-width: 557px){
+        footer{
+            margin-top: 115vh;
+        }
+    }
+    @media only screen and (max-width: 556px){
+        footer{
+            margin-top: 125vh;
+        }
+    }
 }
