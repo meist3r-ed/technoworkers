@@ -113,6 +113,7 @@ header{
     z-index: 100;
     list-style-type: none;
     width: 150px;
+    margin-top: -20px;
 }
 
 .side_menu_text{
@@ -121,8 +122,10 @@ header{
     font-style: normal;
     color: #ffffff;
     font-size: 25px;
-    width: 250px;
-    margin-top: 30px;
+    width: 300px;
+    height: 35px;
+    padding-top: 8px;
+    margin-top: 50px;
     transition: background-color 0.5s;
 
     -webkit-touch-callout: none;
@@ -139,7 +142,7 @@ header{
 
 #side_menu_bg{
     z-index: 99;
-    margin-top: -251px;
+    margin-top: -384px;
     height: 100%;
     width: 100%;
     background-color: #000000;

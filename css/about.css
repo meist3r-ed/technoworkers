@@ -138,6 +138,10 @@ footer{
 /* ---------------------------------------------------- */
 /* MOBILE LAYOUT */
 @media only screen and (max-width: 875px){
+    #bg{
+        background-size: cover;
+        background-position: top;
+    }
     @media only screen and (min-width: 577px){
         #top{
             height: 28vh;
@@ -153,7 +157,7 @@ footer{
 
     @media only screen and (min-width: 577px){
         #bottom{
-            height: 100vh;
+            height: 110vh;
             margin-top: 67vh;
             background-color: #fafafa;
         }
@@ -216,7 +220,7 @@ footer{
     }
     @media only screen and (max-width: 556px){
         footer{
-            margin-top: 125vh;
+            margin-top: 145vh;
         }
     }
 }

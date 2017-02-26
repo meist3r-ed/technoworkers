@@ -22,7 +22,7 @@
             <nav id="menuNav">
                 <!-- MENU ICON -->
                 <div id="menuIcon">
-                    <img id="menuIcon_img" src="img/topdiv/menu_icon.png" height="30px" onclick="openSideMenu()"/>
+                    <img id="menuIcon_img" src="img/topdiv/menu_icon.png" height="30px"/>
                 </div>
                 <!-- LOGO ICON -->
                 <div id="logoIcon">
@@ -71,10 +71,26 @@
             <div id="side_menu_container">
                 <nav id="side_menu">
                     <ul id="side_menu_list">
-                        <li class="side_menu_text" onclick="switcher(1)">SOBRE</li>
-                        <li class="side_menu_text" onclick="switcher(2)">SERVIÇOS</li>
-                        <li class="side_menu_text" onclick="switcher(3)">CLIENTES</li>
-                        <li class="side_menu_text" onclick="switcher(4)">CONTATO</li>
+                        <li class="side_menu_text" onclick="switcher(1)"
+                            onmouseover="selector(1,1)" onmouseout="selector(1,2)">
+                            SOBRE
+                        </li>
+                        <li class="menuText_interact" id="about_interact_side"><li>
+                        <li class="side_menu_text" onclick="switcher(2)"
+                            onmouseover="selector(2,1)" onmouseout="selector(2,2)">
+                            SERVIÇOS
+                        </li>
+                        <li class="menuText_interact" id="services_interact_side"><li>
+                        <li class="side_menu_text" onclick="switcher(3)"
+                            onmouseover="selector(3,1)" onmouseout="selector(3,2)">
+                            CLIENTES
+                        </li>
+                        <li class="menuText_interact" id="clients_interact_side"><li>
+                        <li class="side_menu_text" onclick="switcher(4)"
+                            onmouseover="selector(4,1)" onmouseout="selector(4,2)">
+                            CONTATO
+                        </li>
+                        <li class="menuText_interact" id="liaison_interact_side"><li>
                     </ul>
                 </nav>
                 <!-- SIDE MENU BG -->

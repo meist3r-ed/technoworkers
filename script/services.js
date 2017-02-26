@@ -76,6 +76,38 @@ function services_clear_table(){
     body_2.innerHTML = "";
 }
 
+function get_bracket_position(num){
+    var button_1 = document.getElementById("button_1").clientWidth;
+    var button_2 = document.getElementById("button_2").clientWidth;
+    var button_3 = document.getElementById("button_3").clientWidth;
+    var button_4 = document.getElementById("button_4").clientWidth;
+    var comp = "2%";
+    var sum = 0;
+
+    switch(num){
+        case 1:
+            sum += button_1 / 2;
+            break;
+        case 2:
+            sum += button_1;
+            sum += button_2 / 2;
+            break;
+        case 3:
+            sum += button_1;
+            sum += button_2;
+            sum += button_3 / 2;
+            break;
+        case 4:
+            sum += button_1;
+            sum += button_2;
+            sum += button_3;
+            sum += button_4 / 2;
+            break;
+    }
+
+    return "calc(" + sum.toString() + "px - " + comp + ")";
+}
+
 function services_select(num){
     var curbut = "button_" + num.toString();
     var bracket = document.getElementById("bracket");
@@ -86,27 +118,25 @@ function services_select(num){
     services_clear_buttons();
     services_clear_table();
 
+    bracket.style.marginLeft = get_bracket_position(num);
+
     switch(num){
         case 1:
-            bracket.style.marginLeft = "3%";
             button.innerHTML = "<span class=\"text_bold\">Gestão</span>";
             title.innerHTML = "Gestão de Ativos de TI";
             body.innerHTML = services_button_1_text();
             break;
         case 2:
-            bracket.style.marginLeft = "14%";
             button.innerHTML = "<span class=\"text_bold\">Suporte</span>";
             title.innerHTML = "Service Desk";
             body.innerHTML = services_button_2_text();
             break;
         case 3:
-            bracket.style.marginLeft = "29.5%";
             button.innerHTML = "<span class=\"text_bold\">Gerenciamento</span>";
             title.innerHTML = "Serviços de Campo e Gerenciamento";
             body.innerHTML = services_button_3_text();
             break;
         case 4:
-            bracket.style.marginLeft = "49%";
             button.innerHTML = "<span class=\"text_bold\">Projetos</span>";
             title.innerHTML = "Projetos de Infraestrutura de TI";
             body.innerHTML = services_button_4_text_1();

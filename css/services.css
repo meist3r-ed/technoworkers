@@ -10,12 +10,12 @@
     z-index: 1;
     margin-left: auto;
     margin-right: -50%;
-    height: 100vh;
+    height: 109vh;
     width: 60vw;
     background-image: url("../img/services/bg.jpg");
-    background-size: 60vw 100vh;
+    background-size: 60vw 109vh;
     background-repeat: no-repeat;
-    transform: translateZ(-1px) scale(2.2);
+    transform: translateZ(-1px) scale(2);
 }
 
 #cubes{
@@ -23,14 +23,14 @@
     z-index: 2;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 109vh;
     width: 100vw;
     margin-top: -100vh;
     background: url("../img/cubes_dark.png");
     background-size: 67px 100px;
     background-repeat: repeat;
     opacity: 0.3;
-    transform: translateZ(-0.6px) scale(1.8);
+    transform: translateZ(-0.6px) scale(1.6);
 }
 
 .overlay_shape, .overlay_text{
@@ -60,11 +60,11 @@
 }
 
 #bottom{
-    height: 62vh;
-    width: 60.8%;
+    height: 72vh;
+    width: 61.5%;
     margin-left: 0;
     margin-right: auto;
-    margin-top: calc(32vh + 15vh - 0.1%);
+    margin-top: calc(32vh + 15vh - 1%);
     background-color: #fafafa;
 }
 
@@ -123,10 +123,12 @@
 
 #content_text_title{
     font-size: 5vh;
+    text-align: left;
 }
 
 #content_text_title_2{
     font-size: 5vh;
+    text-align: left;
 }
 
 .content_text{
@@ -135,5 +137,75 @@
 }
 
 footer{
-    margin-top: 1vh;
+    margin-top: -9vh;
+}
+
+/* ---------------------------------------------------- */
+/* MOBILE LAYOUT */
+@media only screen and (max-width: 875px){
+    #bg{
+        margin-left: 0%;
+        margin-right: auto;
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        background-position: top;
+    }
+
+    #cubes{
+        height: 100vh;
+    }
+
+    #top{
+        height: 30vh;
+        background-color: #fafafa;
+    }
+
+    #mid{
+        height: 15vh;
+        margin-top: calc(30vh + 30vh);
+        background-color: #fafafa;
+    }
+
+    #bottom{
+        height: 75vh;
+        width: 100%;
+        margin-top: calc(30vh + 30vh + 15vh);
+        background-color: #fafafa;
+    }
+
+    #title{
+        margin-top: 16vh;
+        font-size: 7.5vh;
+        text-align: center;
+    }
+
+    #subtitle{
+        margin-top: 37vh;
+    }
+
+    #underscore{
+        width: 95%;
+    }
+
+    #services_table{
+        width: 95%;
+        font-size: 4vh;
+    }
+
+    #content_table{
+        margin-left: 3%;
+        text-align: justify;
+        height: auto;
+        width: 91%;
+    }
+
+    .content_text{
+        font-size: 3.3vh;
+        padding-top: 3vh;
+    }
+
+    footer{
+        margin-top: 54vh;
+    }
 }
